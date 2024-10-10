@@ -1,0 +1,19 @@
+@startuml
+actor "Access Management Mitarbeiter" as Support
+
+left to right direction
+
+rectangle "Access Manager" {
+  usecase "API-Clients erstellen" as U1
+  usecase "API-Client anzeigen" as U2
+  usecase "API-Client verändern" as U3
+  usecase "API-Client löschen" as U4
+}
+
+Support -- U1
+Support -- U2
+Support -- U3
+Support -- U4
+
+
+@enduml

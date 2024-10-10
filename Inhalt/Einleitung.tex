@@ -1,44 +1,30 @@
 % !TEX root = ../Projektdokumentation.tex
 \section{Einleitung}
 \label{sec:Einleitung}
-
+In dieser Projektdokumentation wird der Ablauf des IHK-Abschlussprojektes dargestellt, das im Rahmen meiner Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei der 1WorldSync GmbH durchgeführt wurde.
 
 \subsection{Projektumfeld} 
 \label{sec:Projektumfeld}
-\begin{itemize}
-	\item Kurze Vorstellung des Ausbildungsbetriebs (Geschäftsfeld, Mitarbeiterzahl \usw)
-	\item Wer ist Auftraggeber/Kunde des Projekts?
-\end{itemize}
+Die 1WorldSync GmbH ist ein international tätiges Unternehmen im Bereich Produktinformationsmanagement und Datensynchronisation mit etwa 100 Mitarbeitern und Sitz in Köln. Das Unternehmen unterstützt weltweit Kunden dabei, Produktinformationen entlang der Lieferkette zu verwalten und zu synchronisieren. Der Auftraggeber des Projekts ist die Access Management Abteilung, die für die Verwaltung der API-Clients der Kunden zuständig ist. Diese API-Clients sind essenziell für die Interaktion zwischen den Systemen der Kunden und der 1WorldSync-Plattform.
 
 
 \subsection{Projektziel} 
 \label{sec:Projektziel}
-\begin{itemize}
-	\item Worum geht es eigentlich?
-	\item Was soll erreicht werden?
-\end{itemize}
+Ziel des Projekts ist die Entwicklung einer benutzerfreundlichen Webanwendung, die es der Access Management Abteilung ermöglicht, API-Clients für Kunden direkt zu erstellen und zu verwalten. Der bisherige Prozess erfordert das manuelle Anlegen der Clients über Terraform-Skripte, was zeitaufwändig und anfällig für Fehler ist. Durch die neue Anwendung soll dieser Schritt entfallen und der gesamte Prozess effizienter und weniger fehleranfällig gestaltet werden. Zusätzlich wird die Arbeitslast der Foundation-Abteilung verringert.
 
 
 \subsection{Projektbegründung} 
 \label{sec:Projektbegruendung}
-\begin{itemize}
-	\item Warum ist das Projekt sinnvoll (\zB Kosten- oder Zeitersparnis, weniger Fehler)?
-	\item Was ist die Motivation hinter dem Projekt?
-\end{itemize}
+
+Die Automatisierung des bisherigen Prozesses bietet deutliche Zeit- und Kostenersparnisse. Manuelle Eingriffe entfallen, wodurch potenzielle Fehlerquellen reduziert und die Bearbeitungszeit signifikant verkürzt werden. Diese Verbesserungen tragen nicht nur zur Entlastung der Access Management und Foundation-Abteilungen bei, sondern erhöhen auch die Kundenzufriedenheit durch schnellere und präzisere Bereitstellung der API-Clients.
+
 
 
 \subsection{Projektschnittstellen} 
 \label{sec:Projektschnittstellen}
-\begin{itemize}
-	\item Mit welchen anderen Systemen interagiert die Anwendung (technische Schnittstellen)?
-	\item Wer genehmigt das Projekt \bzw stellt Mittel zur Verfügung? 
-	\item Wer sind die Benutzer der Anwendung?
-	\item Wem muss das Ergebnis präsentiert werden?
-\end{itemize}
+Die Webanwendung interagiert mit bereits bestehenden Systemen der 1WorldSync GmbH, wie z.B. Keycloak, das zur Authentifizierung der Benutzer verwendet wird, und der Google Cloud Platform, auf der die Anwendung bereitgestellt wird. Die Infrastruktur, einschließlich des Deployments mit Jenkins und Terraform, wird von der DevOps-Abteilung bereitgestellt. Die Hauptnutzer der Anwendung sind die Mitarbeiter der Access Management Abteilung, während die Foundation-Abteilung für das technische Setup und die Abnahme der Anwendung verantwortlich ist.
 
 
 \subsection{Projektabgrenzung} 
 \label{sec:Projektabgrenzung}
-\begin{itemize}
-	\item Was ist explizit nicht Teil des Projekts (\insb bei Teilprojekten)?
-\end{itemize}
+Das Projekt beschränkt sich auf die Entwicklung der Webanwendung für die Verwaltung und Erstellung von API-Clients. Nicht Teil des Projekts ist die Integration neuer Funktionalitäten für API-Clients oder andere Support-Prozesse.

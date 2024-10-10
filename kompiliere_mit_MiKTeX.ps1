@@ -15,7 +15,7 @@ if ($answer -eq "y") {
     $svgFiles = Get-ChildItem -Path ".\PlantUML\" -Filter "*.svg"
     foreach ($svgFile in $svgFiles) {
         $pdfName = ".\Anhang\" + [IO.Path]::GetFileNameWithoutExtension($svgFile.Name) + ".pdf"
-        & inkscape --export-filename=$pdfName $svgFile.FullName
+        & $env:inkscape --export-filename=$pdfName $svgFile.FullName
     }
 
     Write-Output "Diagramme wurden erfolgreich in PDF umgewandelt"
